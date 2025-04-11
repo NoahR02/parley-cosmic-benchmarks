@@ -1,0 +1,16 @@
+[package]
+name = "parley-cosmic-benchmarks"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cosmic-text = "0.14.1"
+# Parley is still on 0.30 from February, so we'll use the latest Git revision.
+parley = { git = "https://github.com/linebender/parley", rev = "d53a05820799a88b23a9712d9d026378a2699403" }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "mod"
+harness = false

@@ -1,0 +1,9 @@
+# Editors
+.idea
+.vs
+.vscode
+.DS_Store
+
+
+# Build Folder
+/target
